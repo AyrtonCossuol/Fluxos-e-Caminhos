@@ -1,0 +1,10 @@
+reset;
+
+option solver cplex;
+
+model FluxoMin.md;
+data FluxoMin.dat;
+
+solve;
+
+display x, w, cost;
